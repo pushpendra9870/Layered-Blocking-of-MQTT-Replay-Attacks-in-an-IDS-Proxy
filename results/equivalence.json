@@ -1,0 +1,6 @@
+{
+  "broker": "mosquitto",
+  "output2_vs_output3_identical": true,
+  "live_vs_offline_engine_identical": true,
+  "decisions_compared": 4080
+}

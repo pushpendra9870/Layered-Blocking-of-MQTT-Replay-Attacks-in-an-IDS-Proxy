@@ -1,0 +1,45 @@
+
+--------------------------------------------------------------
+  Packet-ID / DUP reuse
+--------------------------------------------------------------
+                     predicted REPLAY   predicted LEGIT
+    actual REPLAY          TP=40             FN=40   
+    actual LEGIT           FP=0              TN=4000 
+
+    precision=1.000  recall=0.500  F1=0.667  accuracy=0.990
+    by packet type:
+      legit_fresh            legit      0/4000 
+      replay_exact           replay    40/40   
+      replay_dupevasion      replay     0/40   
+
+--------------------------------------------------------------
+  HMAC + freshness
+--------------------------------------------------------------
+                     predicted REPLAY   predicted LEGIT
+    actual REPLAY          TP=80             FN=0    
+    actual LEGIT           FP=0              TN=4000 
+
+    precision=1.000  recall=1.000  F1=1.000  accuracy=1.000
+    by packet type:
+      legit_fresh            legit      0/4000 
+      replay_exact           replay    40/40   
+      replay_dupevasion      replay    40/40   
+
+--------------------------------------------------------------
+  Layered IDS (packet-id + HMAC/freshness)
+--------------------------------------------------------------
+                     predicted REPLAY   predicted LEGIT
+    actual REPLAY          TP=80             FN=0    
+    actual LEGIT           FP=0              TN=4000 
+
+    precision=1.000  recall=1.000  F1=1.000  accuracy=1.000
+    by packet type:
+      legit_fresh            legit      0/4000 
+      replay_exact           replay    40/40   
+      replay_dupevasion      replay    40/40   
+
+    layered reason breakdown:
+       4000  forward legit     fresh_sequence
+         80  drop    replay    replay_stale_sequence
+
+saved -> /Users/pushpendra/Downloads/file__ 2/mqtt_real_dataset_eval/results/extra_windows/offline_skip0

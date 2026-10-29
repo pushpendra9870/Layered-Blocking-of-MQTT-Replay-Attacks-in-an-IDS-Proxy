@@ -1,0 +1,59 @@
+{
+  "new_conn": {
+    "output2": {
+      "broker": "mosquitto",
+      "replay_delivered_to_subscriber": 0,
+      "ids_matrix": {
+        "TP": 80,
+        "FP": 0,
+        "TN": 4000,
+        "FN": 0
+      },
+      "broker_received_publishes": 4000
+    },
+    "output3": {
+      "broker": "mosquitto",
+      "replay_delivered_to_subscriber": 0,
+      "ids_matrix": {
+        "TP": 80,
+        "FP": 0,
+        "TN": 4000,
+        "FN": 0
+      },
+      "broker_received_publishes": 4000
+    }
+  },
+  "skip0_window": {
+    "output1": {
+      "broker": "mosquitto",
+      "legit_delivered": 4000,
+      "replay_delivered_to_subscriber": 80,
+      "ids_matrix": null,
+      "broker_received_publishes": 4080
+    },
+    "output2": {
+      "broker": "mosquitto",
+      "legit_delivered": 4000,
+      "replay_delivered_to_subscriber": 0,
+      "ids_matrix": {
+        "TP": 80,
+        "FP": 0,
+        "TN": 4000,
+        "FN": 0
+      },
+      "broker_received_publishes": 4000
+    },
+    "output3": {
+      "broker": "mosquitto",
+      "legit_delivered": 4000,
+      "replay_delivered_to_subscriber": 0,
+      "ids_matrix": {
+        "TP": 80,
+        "FP": 0,
+        "TN": 4000,
+        "FN": 0
+      },
+      "broker_received_publishes": 4000
+    }
+  }
+}

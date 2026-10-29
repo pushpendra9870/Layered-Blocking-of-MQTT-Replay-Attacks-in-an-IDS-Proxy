@@ -1,0 +1,90 @@
+[
+ {
+  "seq_window": 16,
+  "TP": 80,
+  "FP": 748,
+  "TN": 3252,
+  "FN": 0,
+  "precision": 0.0966,
+  "recall": 1.0,
+  "f1": 0.1762,
+  "accuracy": 0.8167
+ },
+ {
+  "seq_window": 64,
+  "TP": 80,
+  "FP": 475,
+  "TN": 3525,
+  "FN": 0,
+  "precision": 0.1441,
+  "recall": 1.0,
+  "f1": 0.252,
+  "accuracy": 0.8836
+ },
+ {
+  "seq_window": 128,
+  "TP": 80,
+  "FP": 181,
+  "TN": 3819,
+  "FN": 0,
+  "precision": 0.3065,
+  "recall": 1.0,
+  "f1": 0.4692,
+  "accuracy": 0.9556
+ },
+ {
+  "seq_window": 178,
+  "TP": 80,
+  "FP": 1,
+  "TN": 3999,
+  "FN": 0,
+  "precision": 0.9877,
+  "recall": 1.0,
+  "f1": 0.9938,
+  "accuracy": 0.9998
+ },
+ {
+  "seq_window": 179,
+  "TP": 80,
+  "FP": 0,
+  "TN": 4000,
+  "FN": 0,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "accuracy": 1.0
+ },
+ {
+  "seq_window": 256,
+  "TP": 80,
+  "FP": 0,
+  "TN": 4000,
+  "FN": 0,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "accuracy": 1.0
+ },
+ {
+  "seq_window": 1024,
+  "TP": 80,
+  "FP": 0,
+  "TN": 4000,
+  "FN": 0,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "accuracy": 1.0
+ },
+ {
+  "seq_window": 100000,
+  "TP": 80,
+  "FP": 0,
+  "TN": 4000,
+  "FN": 0,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1": 1.0,
+  "accuracy": 1.0
+ }
+]

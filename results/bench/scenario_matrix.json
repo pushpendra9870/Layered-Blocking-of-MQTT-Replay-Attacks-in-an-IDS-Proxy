@@ -1,0 +1,3970 @@
+[
+ {
+  "legit": 5,
+  "attack": 0,
+  "ideal": 5,
+  "broker_received": 5,
+  "delivered": 5,
+  "id": "S1",
+  "scenario": "Legit QoS1, fresh seq",
+  "kind": "legit",
+  "config": 1,
+  "label": "No IDS",
+  "attack_leaked": 0,
+  "legit_lost": 0
+ },
+ {
+  "legit": 5,
+  "attack": 0,
+  "ideal": 5,
+  "broker_received": 5,
+  "delivered": 5,
+  "decisions": [
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ]
+  ],
+  "id": "S1",
+  "scenario": "Legit QoS1, fresh seq",
+  "kind": "legit",
+  "config": 2,
+  "label": "IDS full packet",
+  "attack_leaked": 0,
+  "legit_lost": 0
+ },
+ {
+  "legit": 5,
+  "attack": 0,
+  "ideal": 5,
+  "broker_received": 5,
+  "delivered": 5,
+  "decisions": [
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ]
+  ],
+  "id": "S1",
+  "scenario": "Legit QoS1, fresh seq",
+  "kind": "legit",
+  "config": 3,
+  "label": "Modified IDS",
+  "attack_leaked": 0,
+  "legit_lost": 0
+ },
+ {
+  "legit": 2,
+  "attack": 0,
+  "ideal": 2,
+  "broker_received": 2,
+  "delivered": 2,
+  "id": "S2",
+  "scenario": "Legit QoS1 DUP retransmission (in flight)",
+  "kind": "retx",
+  "config": 1,
+  "label": "No IDS",
+  "attack_leaked": 0,
+  "legit_lost": 0
+ },
+ {
+  "legit": 2,
+  "attack": 0,
+  "ideal": 2,
+  "broker_received": 2,
+  "delivered": 2,
+  "decisions": [
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "retransmit_inflight",
+    "forward"
+   ]
+  ],
+  "id": "S2",
+  "scenario": "Legit QoS1 DUP retransmission (in flight)",
+  "kind": "retx",
+  "config": 2,
+  "label": "IDS full packet",
+  "attack_leaked": 0,
+  "legit_lost": 0
+ },
+ {
+  "legit": 2,
+  "attack": 0,
+  "ideal": 2,
+  "broker_received": 2,
+  "delivered": 2,
+  "decisions": [
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "retransmit_inflight",
+    "forward"
+   ]
+  ],
+  "id": "S2",
+  "scenario": "Legit QoS1 DUP retransmission (in flight)",
+  "kind": "retx",
+  "config": 3,
+  "label": "Modified IDS",
+  "attack_leaked": 0,
+  "legit_lost": 0
+ },
+ {
+  "legit": 3,
+  "attack": 0,
+  "ideal": 3,
+  "broker_received": 3,
+  "delivered": 3,
+  "id": "S3",
+  "scenario": "Legit QoS2 full handshake",
+  "kind": "legit",
+  "config": 1,
+  "label": "No IDS",
+  "attack_leaked": 0,
+  "legit_lost": 0
+ },
+ {
+  "legit": 3,
+  "attack": 0,
+  "ideal": 3,
+  "broker_received": 3,
+  "delivered": 3,
+  "decisions": [
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ]
+  ],
+  "id": "S3",
+  "scenario": "Legit QoS2 full handshake",
+  "kind": "legit",
+  "config": 2,
+  "label": "IDS full packet",
+  "attack_leaked": 0,
+  "legit_lost": 0
+ },
+ {
+  "legit": 3,
+  "attack": 0,
+  "ideal": 3,
+  "broker_received": 3,
+  "delivered": 3,
+  "decisions": [
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ]
+  ],
+  "id": "S3",
+  "scenario": "Legit QoS2 full handshake",
+  "kind": "legit",
+  "config": 3,
+  "label": "Modified IDS",
+  "attack_leaked": 0,
+  "legit_lost": 0
+ },
+ {
+  "legit": 3,
+  "attack": 0,
+  "ideal": 3,
+  "broker_received": 3,
+  "delivered": 3,
+  "id": "S4",
+  "scenario": "Packet-ID reuse after completion, fresh seq",
+  "kind": "legit",
+  "config": 1,
+  "label": "No IDS",
+  "attack_leaked": 0,
+  "legit_lost": 0
+ },
+ {
+  "legit": 3,
+  "attack": 0,
+  "ideal": 3,
+  "broker_received": 3,
+  "delivered": 3,
+  "decisions": [
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "pid_reuse_after_completion_fresh_seq",
+    "forward"
+   ],
+   [
+    "legit",
+    "pid_reuse_after_completion_fresh_seq",
+    "forward"
+   ]
+  ],
+  "id": "S4",
+  "scenario": "Packet-ID reuse after completion, fresh seq",
+  "kind": "legit",
+  "config": 2,
+  "label": "IDS full packet",
+  "attack_leaked": 0,
+  "legit_lost": 0
+ },
+ {
+  "legit": 3,
+  "attack": 0,
+  "ideal": 3,
+  "broker_received": 3,
+  "delivered": 3,
+  "decisions": [
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "pid_reuse_after_completion_fresh_seq",
+    "forward"
+   ],
+   [
+    "legit",
+    "pid_reuse_after_completion_fresh_seq",
+    "forward"
+   ]
+  ],
+  "id": "S4",
+  "scenario": "Packet-ID reuse after completion, fresh seq",
+  "kind": "legit",
+  "config": 3,
+  "label": "Modified IDS",
+  "attack_leaked": 0,
+  "legit_lost": 0
+ },
+ {
+  "legit": 1,
+  "attack": 3,
+  "ideal": 1,
+  "broker_received": 4,
+  "delivered": 4,
+  "id": "S5",
+  "scenario": "Exact replay (DUP=0)",
+  "kind": "attack",
+  "config": 1,
+  "label": "No IDS",
+  "attack_leaked": 3,
+  "legit_lost": 0
+ },
+ {
+  "legit": 1,
+  "attack": 3,
+  "ideal": 1,
+  "broker_received": 1,
+  "delivered": 1,
+  "decisions": [
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "replay",
+    "replay_completed_transaction",
+    "drop"
+   ],
+   [
+    "replay",
+    "replay_completed_transaction",
+    "drop"
+   ],
+   [
+    "replay",
+    "replay_completed_transaction",
+    "drop"
+   ]
+  ],
+  "id": "S5",
+  "scenario": "Exact replay (DUP=0)",
+  "kind": "attack",
+  "config": 2,
+  "label": "IDS full packet",
+  "attack_leaked": 0,
+  "legit_lost": 0
+ },
+ {
+  "legit": 1,
+  "attack": 3,
+  "ideal": 1,
+  "broker_received": 1,
+  "delivered": 1,
+  "decisions": [
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "replay",
+    "replay_completed_transaction",
+    "drop"
+   ],
+   [
+    "replay",
+    "replay_completed_transaction",
+    "drop"
+   ],
+   [
+    "replay",
+    "replay_completed_transaction",
+    "drop"
+   ]
+  ],
+  "id": "S5",
+  "scenario": "Exact replay (DUP=0)",
+  "kind": "attack",
+  "config": 3,
+  "label": "Modified IDS",
+  "attack_leaked": 0,
+  "legit_lost": 0
+ },
+ {
+  "legit": 1,
+  "attack": 3,
+  "ideal": 1,
+  "broker_received": 4,
+  "delivered": 4,
+  "id": "S6",
+  "scenario": "DUP-evasion replay (DUP=1, ACKed id)",
+  "kind": "attack",
+  "config": 1,
+  "label": "No IDS",
+  "attack_leaked": 3,
+  "legit_lost": 0
+ },
+ {
+  "legit": 1,
+  "attack": 3,
+  "ideal": 1,
+  "broker_received": 1,
+  "delivered": 1,
+  "decisions": [
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "replay",
+    "replay_completed_transaction",
+    "drop"
+   ],
+   [
+    "replay",
+    "replay_completed_transaction",
+    "drop"
+   ],
+   [
+    "replay",
+    "replay_completed_transaction",
+    "drop"
+   ]
+  ],
+  "id": "S6",
+  "scenario": "DUP-evasion replay (DUP=1, ACKed id)",
+  "kind": "attack",
+  "config": 2,
+  "label": "IDS full packet",
+  "attack_leaked": 0,
+  "legit_lost": 0
+ },
+ {
+  "legit": 1,
+  "attack": 3,
+  "ideal": 1,
+  "broker_received": 1,
+  "delivered": 1,
+  "decisions": [
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "replay",
+    "replay_completed_transaction",
+    "drop"
+   ],
+   [
+    "replay",
+    "replay_completed_transaction",
+    "drop"
+   ],
+   [
+    "replay",
+    "replay_completed_transaction",
+    "drop"
+   ]
+  ],
+  "id": "S6",
+  "scenario": "DUP-evasion replay (DUP=1, ACKed id)",
+  "kind": "attack",
+  "config": 3,
+  "label": "Modified IDS",
+  "attack_leaked": 0,
+  "legit_lost": 0
+ },
+ {
+  "legit": 299,
+  "attack": 1,
+  "ideal": 299,
+  "broker_received": 300,
+  "delivered": 300,
+  "id": "S7",
+  "scenario": "Stale-sequence replay (beyond window)",
+  "kind": "attack",
+  "config": 1,
+  "label": "No IDS",
+  "attack_leaked": 1,
+  "legit_lost": 0
+ },
+ {
+  "legit": 299,
+  "attack": 1,
+  "ideal": 299,
+  "broker_received": 299,
+  "delivered": 299,
+  "decisions": [
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "replay",
+    "replay_stale_sequence",
+    "drop"
+   ]
+  ],
+  "id": "S7",
+  "scenario": "Stale-sequence replay (beyond window)",
+  "kind": "attack",
+  "config": 2,
+  "label": "IDS full packet",
+  "attack_leaked": 0,
+  "legit_lost": 0
+ },
+ {
+  "legit": 299,
+  "attack": 1,
+  "ideal": 299,
+  "broker_received": 299,
+  "delivered": 299,
+  "decisions": [
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "replay",
+    "replay_stale_sequence",
+    "drop"
+   ]
+  ],
+  "id": "S7",
+  "scenario": "Stale-sequence replay (beyond window)",
+  "kind": "attack",
+  "config": 3,
+  "label": "Modified IDS",
+  "attack_leaked": 0,
+  "legit_lost": 0
+ },
+ {
+  "legit": 0,
+  "attack": 3,
+  "ideal": 0,
+  "broker_received": 3,
+  "delivered": 3,
+  "id": "S8",
+  "scenario": "Invalid HMAC (tampered)",
+  "kind": "attack",
+  "config": 1,
+  "label": "No IDS",
+  "attack_leaked": 3,
+  "legit_lost": 0
+ },
+ {
+  "legit": 0,
+  "attack": 3,
+  "ideal": 0,
+  "broker_received": 0,
+  "delivered": 0,
+  "decisions": [
+   [
+    "invalid",
+    "invalid_hmac",
+    "drop"
+   ],
+   [
+    "invalid",
+    "invalid_hmac",
+    "drop"
+   ],
+   [
+    "invalid",
+    "invalid_hmac",
+    "drop"
+   ]
+  ],
+  "id": "S8",
+  "scenario": "Invalid HMAC (tampered)",
+  "kind": "attack",
+  "config": 2,
+  "label": "IDS full packet",
+  "attack_leaked": 0,
+  "legit_lost": 0
+ },
+ {
+  "legit": 0,
+  "attack": 3,
+  "ideal": 0,
+  "broker_received": 0,
+  "delivered": 0,
+  "decisions": [
+   [
+    "invalid",
+    "invalid_hmac",
+    "drop"
+   ],
+   [
+    "invalid",
+    "invalid_hmac",
+    "drop"
+   ],
+   [
+    "invalid",
+    "invalid_hmac",
+    "drop"
+   ]
+  ],
+  "id": "S8",
+  "scenario": "Invalid HMAC (tampered)",
+  "kind": "attack",
+  "config": 3,
+  "label": "Modified IDS",
+  "attack_leaked": 0,
+  "legit_lost": 0
+ },
+ {
+  "legit": 0,
+  "attack": 3,
+  "ideal": 0,
+  "broker_received": 3,
+  "delivered": 3,
+  "id": "S9",
+  "scenario": "Missing signature",
+  "kind": "attack",
+  "config": 1,
+  "label": "No IDS",
+  "attack_leaked": 3,
+  "legit_lost": 0
+ },
+ {
+  "legit": 0,
+  "attack": 3,
+  "ideal": 0,
+  "broker_received": 0,
+  "delivered": 0,
+  "decisions": [
+   [
+    "invalid",
+    "missing_signature",
+    "drop"
+   ],
+   [
+    "invalid",
+    "missing_signature",
+    "drop"
+   ],
+   [
+    "invalid",
+    "missing_signature",
+    "drop"
+   ]
+  ],
+  "id": "S9",
+  "scenario": "Missing signature",
+  "kind": "attack",
+  "config": 2,
+  "label": "IDS full packet",
+  "attack_leaked": 0,
+  "legit_lost": 0
+ },
+ {
+  "legit": 0,
+  "attack": 3,
+  "ideal": 0,
+  "broker_received": 0,
+  "delivered": 0,
+  "decisions": [
+   [
+    "invalid",
+    "missing_signature",
+    "drop"
+   ],
+   [
+    "invalid",
+    "missing_signature",
+    "drop"
+   ],
+   [
+    "invalid",
+    "missing_signature",
+    "drop"
+   ]
+  ],
+  "id": "S9",
+  "scenario": "Missing signature",
+  "kind": "attack",
+  "config": 3,
+  "label": "Modified IDS",
+  "attack_leaked": 0,
+  "legit_lost": 0
+ },
+ {
+  "legit": 1,
+  "attack": 2,
+  "ideal": 1,
+  "broker_received": 3,
+  "delivered": 3,
+  "id": "S10",
+  "scenario": "Replay after clean-session reconnect",
+  "kind": "attack",
+  "config": 1,
+  "label": "No IDS",
+  "attack_leaked": 2,
+  "legit_lost": 0
+ },
+ {
+  "legit": 1,
+  "attack": 2,
+  "ideal": 1,
+  "broker_received": 1,
+  "delivered": 1,
+  "decisions": [
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "replay",
+    "replay_seq_already_accepted",
+    "drop"
+   ],
+   [
+    "replay",
+    "replay_seq_already_accepted",
+    "drop"
+   ]
+  ],
+  "id": "S10",
+  "scenario": "Replay after clean-session reconnect",
+  "kind": "attack",
+  "config": 2,
+  "label": "IDS full packet",
+  "attack_leaked": 0,
+  "legit_lost": 0
+ },
+ {
+  "legit": 1,
+  "attack": 2,
+  "ideal": 1,
+  "broker_received": 1,
+  "delivered": 1,
+  "decisions": [
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "replay",
+    "replay_seq_already_accepted",
+    "drop"
+   ],
+   [
+    "replay",
+    "replay_seq_already_accepted",
+    "drop"
+   ]
+  ],
+  "id": "S10",
+  "scenario": "Replay after clean-session reconnect",
+  "kind": "attack",
+  "config": 3,
+  "label": "Modified IDS",
+  "attack_leaked": 0,
+  "legit_lost": 0
+ },
+ {
+  "legit": 2,
+  "attack": 1,
+  "ideal": 2,
+  "broker_received": 3,
+  "delivered": 3,
+  "id": "S11",
+  "scenario": "Replay after persistent-session resume",
+  "kind": "attack",
+  "config": 1,
+  "label": "No IDS",
+  "attack_leaked": 1,
+  "legit_lost": 0
+ },
+ {
+  "legit": 2,
+  "attack": 1,
+  "ideal": 2,
+  "broker_received": 2,
+  "delivered": 2,
+  "decisions": [
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "replay",
+    "replay_completed_transaction",
+    "drop"
+   ]
+  ],
+  "id": "S11",
+  "scenario": "Replay after persistent-session resume",
+  "kind": "attack",
+  "config": 2,
+  "label": "IDS full packet",
+  "attack_leaked": 0,
+  "legit_lost": 0
+ },
+ {
+  "legit": 2,
+  "attack": 1,
+  "ideal": 2,
+  "broker_received": 2,
+  "delivered": 2,
+  "decisions": [
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "replay",
+    "replay_completed_transaction",
+    "drop"
+   ]
+  ],
+  "id": "S11",
+  "scenario": "Replay after persistent-session resume",
+  "kind": "attack",
+  "config": 3,
+  "label": "Modified IDS",
+  "attack_leaked": 0,
+  "legit_lost": 0
+ },
+ {
+  "legit": 2,
+  "attack": 0,
+  "ideal": 2,
+  "broker_received": 2,
+  "delivered": 2,
+  "id": "S12",
+  "scenario": "Lost-ACK retransmit after resume",
+  "kind": "uncertain",
+  "config": 1,
+  "label": "No IDS",
+  "attack_leaked": 0,
+  "legit_lost": 0
+ },
+ {
+  "legit": 2,
+  "attack": 0,
+  "ideal": 2,
+  "broker_received": 2,
+  "delivered": 2,
+  "decisions": [
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "uncertain",
+    "possible_lost_ack_retransmit",
+    "forward"
+   ]
+  ],
+  "id": "S12",
+  "scenario": "Lost-ACK retransmit after resume",
+  "kind": "uncertain",
+  "config": 2,
+  "label": "IDS full packet",
+  "attack_leaked": 0,
+  "legit_lost": 0
+ },
+ {
+  "legit": 2,
+  "attack": 0,
+  "ideal": 2,
+  "broker_received": 2,
+  "delivered": 2,
+  "decisions": [
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "uncertain",
+    "possible_lost_ack_retransmit",
+    "forward"
+   ]
+  ],
+  "id": "S12",
+  "scenario": "Lost-ACK retransmit after resume",
+  "kind": "uncertain",
+  "config": 3,
+  "label": "Modified IDS",
+  "attack_leaked": 0,
+  "legit_lost": 0
+ },
+ {
+  "legit": 1,
+  "attack": 1,
+  "ideal": 1,
+  "broker_received": 2,
+  "delivered": 2,
+  "id": "S13",
+  "scenario": "Cross-identity replay (captured from devA, sent as devB)",
+  "kind": "attack",
+  "config": 1,
+  "label": "No IDS",
+  "attack_leaked": 1,
+  "legit_lost": 0
+ },
+ {
+  "legit": 1,
+  "attack": 1,
+  "ideal": 1,
+  "broker_received": 2,
+  "delivered": 2,
+  "decisions": [
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ]
+  ],
+  "id": "S13",
+  "scenario": "Cross-identity replay (captured from devA, sent as devB)",
+  "kind": "attack",
+  "config": 2,
+  "label": "IDS full packet",
+  "attack_leaked": 1,
+  "legit_lost": 0
+ },
+ {
+  "legit": 1,
+  "attack": 1,
+  "ideal": 1,
+  "broker_received": 2,
+  "delivered": 2,
+  "decisions": [
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ],
+   [
+    "legit",
+    "fresh_sequence",
+    "forward"
+   ]
+  ],
+  "id": "S13",
+  "scenario": "Cross-identity replay (captured from devA, sent as devB)",
+  "kind": "attack",
+  "config": 3,
+  "label": "Modified IDS",
+  "attack_leaked": 1,
+  "legit_lost": 0
+ }
+]

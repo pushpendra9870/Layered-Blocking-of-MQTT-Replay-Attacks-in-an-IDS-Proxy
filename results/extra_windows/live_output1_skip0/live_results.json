@@ -1,0 +1,18 @@
+{
+  "output": "output1_no_ids",
+  "replay_mode": "same_conn",
+  "elapsed_s": 0.68,
+  "all_sends_acknowledged": true,
+  "legit_sent": 4000,
+  "replay_sent": 80,
+  "delivered_total": 4080,
+  "delivered_payload_bytes": 1349695,
+  "legit_delivered": 4000,
+  "legit_delivery_rate": 1.0,
+  "legit_lost": 0,
+  "replay_delivered_to_subscriber": 80,
+  "replay_blocking_rate_delivery": 0.0,
+  "delivery_attribution": "per-(topic,message) counts; assumes a leaked replay is not masked by a lost legit packet on the same key (cross-checked vs IDS log)",
+  "broker_received_publishes": 4080,
+  "broker": "mosquitto"
+}

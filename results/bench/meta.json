@@ -1,0 +1,11 @@
+{
+  "python": "3.12.3",
+  "mosquitto": "mosquitto version 2.0.18",
+  "cpus": 1,
+  "psutil": "7.2.2",
+  "reps": 5,
+  "scale": 10,
+  "rate": 400.0,
+  "mem_total_mb": 3997.8203125,
+  "platform": "linux"
+}

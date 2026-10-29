@@ -1,0 +1,4 @@
+detector,TP,FP,TN,FN,precision,recall,f1,accuracy
+Packet-ID / DUP reuse,1153,0,27588,0,1.0000,1.0000,1.0000,1.0000
+HMAC + freshness,1153,0,27588,0,1.0000,1.0000,1.0000,1.0000
+Layered IDS (packet-id + HMAC/freshness),1153,0,27588,0,1.0000,1.0000,1.0000,1.0000

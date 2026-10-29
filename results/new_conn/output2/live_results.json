@@ -1,0 +1,56 @@
+{
+  "output": "output2_layered_ids",
+  "replay_mode": "new_conn",
+  "elapsed_s": 0.74,
+  "all_sends_acknowledged": true,
+  "legit_sent": 4000,
+  "replay_sent": 80,
+  "delivered_total": 4000,
+  "delivered_payload_bytes": 1327980,
+  "legit_delivered": 4000,
+  "legit_delivery_rate": 1.0,
+  "legit_lost": 0,
+  "replay_delivered_to_subscriber": 0,
+  "replay_blocking_rate_delivery": 1.0,
+  "delivery_attribution": "per-(topic,message) counts; assumes a leaked replay is not masked by a lost legit packet on the same key (cross-checked vs IDS log)",
+  "broker_received_publishes": 4000,
+  "broker": "mosquitto",
+  "ids_verdict_aligned_with_dataset": true,
+  "ids_matrix": {
+    "TP": 80,
+    "FP": 0,
+    "TN": 4000,
+    "FN": 0
+  },
+  "ids_metrics": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "accuracy": 1.0
+  },
+  "ids_by_kind": {
+    "legit_fresh": {
+      "total": 2329,
+      "dropped": 0
+    },
+    "replay_exact": {
+      "total": 40,
+      "dropped": 40
+    },
+    "replay_dupevasion": {
+      "total": 40,
+      "dropped": 40
+    },
+    "legit_retransmit": {
+      "total": 1671,
+      "dropped": 0
+    }
+  },
+  "ids_reason_breakdown": {
+    "legit|fresh_sequence|forward|packet_id+hmac_freshness": 2217,
+    "replay|replay_seq_already_accepted|drop|hmac_freshness": 80,
+    "legit|retransmit_original_unobserved|forward|packet_id+hmac_freshness": 1783
+  },
+  "ids_replays_dropped": 80,
+  "replay_blocking_rate_ids": 1.0
+}

@@ -1,0 +1,2382 @@
+{
+  "source_csv": "/Users/pushpendra/Downloads/file__ 2/mqtt_real_dataset_eval/external_data/replay_attack.csv",
+  "prepared_dataset": "/Users/pushpendra/Downloads/file__ 2/mqtt_real_dataset_eval/external_data/csv_replay_test_ready.json",
+  "source_rows": 29081,
+  "non_attack_labeled_rows_used_as_negative_class": 27588,
+  "attack_labeled_replay_rows": 1493,
+  "matched_replay_rows_scored": 1153,
+  "attack_labeled_rows_excluded_as_unmatched": 340,
+  "rows_excluded_unrecognised_label": 0,
+  "excluded_replay_examples": [
+    {
+      "csv_line": 27593,
+      "uuid": "75407fd5-218f-431d-9064-1dee3e714b72",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27595,
+      "uuid": "7b3ac9b2-d913-4105-8fe5-d94c6889462c",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27602,
+      "uuid": "04bad418-a6bd-477e-a2df-a0fb90668986",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27605,
+      "uuid": "58f1735c-0141-484b-8404-3cfeec7a12ef",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27618,
+      "uuid": "38481a5c-82ed-4ed3-9dcc-d33e84636d31",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27620,
+      "uuid": "efe14866-d51c-449b-a178-101771b24be4",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27621,
+      "uuid": "02f21849-e764-4523-a4c7-365e0b9d071b",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27625,
+      "uuid": "74b3efcc-3dbf-4270-be4a-cf9e37b31b86",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27626,
+      "uuid": "9841bc8b-1cd7-45ba-a433-bc43cca83af0",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27630,
+      "uuid": "edb84e40-c6a8-40a7-970f-1e24968a9ba4",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27636,
+      "uuid": "eaba1703-aeee-44d4-ae86-0f4cf96b30a7",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27638,
+      "uuid": "73b01c10-1cff-4458-9b55-a641253f1b53",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27637,
+      "uuid": "27f2a4f1-2f6e-4192-89b7-bf921ce7c79b",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27649,
+      "uuid": "9edb5844-54a7-48b8-8024-e6f1aa755958",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27651,
+      "uuid": "b949922c-7c87-459b-a008-9926f3300e9a",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27670,
+      "uuid": "69294914-f55c-4df2-a2f0-16fe1a85d6b9",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27672,
+      "uuid": "7d23ec5f-b5fb-4840-ad0c-823a9b68b919",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27676,
+      "uuid": "43ec982b-4b52-4f16-9f19-d3358cda89f1",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27681,
+      "uuid": "dcbc6bac-1019-4659-aacf-7d21922dc9a0",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27683,
+      "uuid": "716c16e9-3274-49c7-bd01-c16cedc5fa52",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27685,
+      "uuid": "06a132c4-6b79-4794-a2e8-82d3e9ea554e",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27698,
+      "uuid": "2d593e18-ac4c-450d-8379-e543590a0ff9",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27707,
+      "uuid": "de226459-5f41-4713-bb1a-da2d7bb37769",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27709,
+      "uuid": "c4d0b64e-9250-4b8d-b6ba-eea261fdf29c",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27711,
+      "uuid": "f6e59455-7d71-417c-91a7-a7fd4a6f7b51",
+      "topic": "optimizacion/planta_nivel1/consigna",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27712,
+      "uuid": "156d6268-18ca-4ac4-8438-049e6a8374ba",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27714,
+      "uuid": "0b687224-1662-4cf9-9878-b2b70e63fa6f",
+      "topic": "optimizacion/planta_nivel1/consigna",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27719,
+      "uuid": "a6051fb5-fe6e-4496-bcbe-50149ff64fd8",
+      "topic": "optimizacion/planta_nivel1/consigna",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27723,
+      "uuid": "8714b529-c3e2-47ca-995b-43077e651553",
+      "topic": "optimizacion/planta_nivel2/consigna",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27726,
+      "uuid": "836ae0d6-2712-45ca-bae5-89a04b46c273",
+      "topic": "optimizacion/planta_nivel1/consigna",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27729,
+      "uuid": "380ecf29-398a-4819-94d5-f2cc193f9b28",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27731,
+      "uuid": "e65d29cf-05ee-4052-bfc4-98d1ec435030",
+      "topic": "optimizacion/planta_nivel2/consigna",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27733,
+      "uuid": "66fe73dd-7062-4f31-a213-fa473a974c10",
+      "topic": "optimizacion/planta_nivel2/consigna",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27735,
+      "uuid": "06f465ed-d073-458d-bfb6-ea7790ec69a3",
+      "topic": "optimizacion/planta_nivel1/consigna",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27736,
+      "uuid": "df792046-4620-451f-9721-a66ba2adf853",
+      "topic": "optimizacion/planta_nivel1/consigna",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27737,
+      "uuid": "cd65ca44-67b7-4865-8c40-c06e3ac09350",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27739,
+      "uuid": "e0f36a74-6a1c-4378-ba03-e1e682562f9a",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27749,
+      "uuid": "7825a037-b80e-4af0-a45c-efa1525b4e04",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27750,
+      "uuid": "042d6e96-dde1-4e49-91ec-b8dfe29e4c82",
+      "topic": "optimizacion/planta_nivel1/consigna",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27756,
+      "uuid": "7f479050-9b3e-4f92-abdb-f3a31f6b9069",
+      "topic": "optimizacion/planta_nivel1/consigna",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27761,
+      "uuid": "965c7794-9e07-463f-a975-a7c8faf6c4f9",
+      "topic": "optimizacion/planta_nivel1/consigna",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27762,
+      "uuid": "3a15eceb-f4ee-4a88-9784-ee95c8580c79",
+      "topic": "optimizacion/planta_nivel2/consigna",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27767,
+      "uuid": "231d382e-54a9-4e73-92b8-418c8dc90c53",
+      "topic": "optimizacion/planta_nivel1/consigna",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27768,
+      "uuid": "4ef0cf00-3f06-4db4-9ebf-ddda450379e3",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27771,
+      "uuid": "758e4f2d-e2b3-40e9-ac15-c01db91a7ad5",
+      "topic": "optimizacion/planta_nivel2/consigna",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27770,
+      "uuid": "ddec8da2-bf99-4f85-b2db-09c94c484f14",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27786,
+      "uuid": "77cb4a2e-dd6c-4cec-8e9a-4920ae9487ec",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27789,
+      "uuid": "a8e33d74-3103-45b6-a49f-fce1da15af14",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27791,
+      "uuid": "082a442d-006d-4647-8fe9-c6680b981fac",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27799,
+      "uuid": "104c4e24-d1b9-404b-885e-e23ee3952f2f",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    }
+  ],
+  "excluded_replay_count_full": 340,
+  "topic_counts_legit": {
+    "optimizacion/planta_nivel2/parametros": 13499,
+    "optimizacion/planta_nivel1/parametros": 13217,
+    "optimizacion/planta_nivel1/consigna": 436,
+    "optimizacion/planta_nivel2/consigna": 436
+  },
+  "topic_counts_matched_replay": {
+    "optimizacion/planta_nivel1/parametros": 575,
+    "optimizacion/planta_nivel2/parametros": 569,
+    "optimizacion/planta_nivel1/consigna": 5,
+    "optimizacion/planta_nivel2/consigna": 4
+  },
+  "synthetic_fields_and_assumptions": [
+    "The CSV is not a PCAP and does not provide MQTT packet IDs, QoS, DUP/RETAIN flags, MQTT session IDs, or ACK exchanges.",
+    "A separate synthetic MQTT client/connection is assigned per topic.",
+    "QoS 1, packet IDs, and DUP=0 are synthesized for the controlled test.",
+    "Non-attack-labeled rows have blank tipo_ataque; they are treated as negatives but are not independently verified benign labels.",
+    "Only replay-labeled rows matching an earlier non-attack-labeled row on exact topic+payload are scored as exact replays.",
+    "CSV payloads are wrapped in a valid HMAC envelope using the project's existing signing.py and MQTT_HMAC_SECRET.",
+    "The existing evaluator sends all non-attack-labeled rows first, then the reconstructed replay rows. This is a controlled replay-after-original test, not a timing-faithful reproduction of the original campaign.",
+    "The original signed envelope is reused for a replay, so the replay has the same signed data/sequence and packet ID as its matched original."
+  ],
+  "replay_exclusions": [
+    {
+      "csv_line": 27593,
+      "uuid": "75407fd5-218f-431d-9064-1dee3e714b72",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27595,
+      "uuid": "7b3ac9b2-d913-4105-8fe5-d94c6889462c",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27602,
+      "uuid": "04bad418-a6bd-477e-a2df-a0fb90668986",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27605,
+      "uuid": "58f1735c-0141-484b-8404-3cfeec7a12ef",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27618,
+      "uuid": "38481a5c-82ed-4ed3-9dcc-d33e84636d31",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27620,
+      "uuid": "efe14866-d51c-449b-a178-101771b24be4",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27621,
+      "uuid": "02f21849-e764-4523-a4c7-365e0b9d071b",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27625,
+      "uuid": "74b3efcc-3dbf-4270-be4a-cf9e37b31b86",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27626,
+      "uuid": "9841bc8b-1cd7-45ba-a433-bc43cca83af0",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27630,
+      "uuid": "edb84e40-c6a8-40a7-970f-1e24968a9ba4",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27636,
+      "uuid": "eaba1703-aeee-44d4-ae86-0f4cf96b30a7",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27638,
+      "uuid": "73b01c10-1cff-4458-9b55-a641253f1b53",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27637,
+      "uuid": "27f2a4f1-2f6e-4192-89b7-bf921ce7c79b",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27649,
+      "uuid": "9edb5844-54a7-48b8-8024-e6f1aa755958",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27651,
+      "uuid": "b949922c-7c87-459b-a008-9926f3300e9a",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27670,
+      "uuid": "69294914-f55c-4df2-a2f0-16fe1a85d6b9",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27672,
+      "uuid": "7d23ec5f-b5fb-4840-ad0c-823a9b68b919",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27676,
+      "uuid": "43ec982b-4b52-4f16-9f19-d3358cda89f1",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27681,
+      "uuid": "dcbc6bac-1019-4659-aacf-7d21922dc9a0",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27683,
+      "uuid": "716c16e9-3274-49c7-bd01-c16cedc5fa52",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27685,
+      "uuid": "06a132c4-6b79-4794-a2e8-82d3e9ea554e",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27698,
+      "uuid": "2d593e18-ac4c-450d-8379-e543590a0ff9",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27707,
+      "uuid": "de226459-5f41-4713-bb1a-da2d7bb37769",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27709,
+      "uuid": "c4d0b64e-9250-4b8d-b6ba-eea261fdf29c",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27711,
+      "uuid": "f6e59455-7d71-417c-91a7-a7fd4a6f7b51",
+      "topic": "optimizacion/planta_nivel1/consigna",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27712,
+      "uuid": "156d6268-18ca-4ac4-8438-049e6a8374ba",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27714,
+      "uuid": "0b687224-1662-4cf9-9878-b2b70e63fa6f",
+      "topic": "optimizacion/planta_nivel1/consigna",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27719,
+      "uuid": "a6051fb5-fe6e-4496-bcbe-50149ff64fd8",
+      "topic": "optimizacion/planta_nivel1/consigna",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27723,
+      "uuid": "8714b529-c3e2-47ca-995b-43077e651553",
+      "topic": "optimizacion/planta_nivel2/consigna",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27726,
+      "uuid": "836ae0d6-2712-45ca-bae5-89a04b46c273",
+      "topic": "optimizacion/planta_nivel1/consigna",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27729,
+      "uuid": "380ecf29-398a-4819-94d5-f2cc193f9b28",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27731,
+      "uuid": "e65d29cf-05ee-4052-bfc4-98d1ec435030",
+      "topic": "optimizacion/planta_nivel2/consigna",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27733,
+      "uuid": "66fe73dd-7062-4f31-a213-fa473a974c10",
+      "topic": "optimizacion/planta_nivel2/consigna",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27735,
+      "uuid": "06f465ed-d073-458d-bfb6-ea7790ec69a3",
+      "topic": "optimizacion/planta_nivel1/consigna",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27736,
+      "uuid": "df792046-4620-451f-9721-a66ba2adf853",
+      "topic": "optimizacion/planta_nivel1/consigna",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27737,
+      "uuid": "cd65ca44-67b7-4865-8c40-c06e3ac09350",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27739,
+      "uuid": "e0f36a74-6a1c-4378-ba03-e1e682562f9a",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27749,
+      "uuid": "7825a037-b80e-4af0-a45c-efa1525b4e04",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27750,
+      "uuid": "042d6e96-dde1-4e49-91ec-b8dfe29e4c82",
+      "topic": "optimizacion/planta_nivel1/consigna",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27756,
+      "uuid": "7f479050-9b3e-4f92-abdb-f3a31f6b9069",
+      "topic": "optimizacion/planta_nivel1/consigna",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27761,
+      "uuid": "965c7794-9e07-463f-a975-a7c8faf6c4f9",
+      "topic": "optimizacion/planta_nivel1/consigna",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27762,
+      "uuid": "3a15eceb-f4ee-4a88-9784-ee95c8580c79",
+      "topic": "optimizacion/planta_nivel2/consigna",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27767,
+      "uuid": "231d382e-54a9-4e73-92b8-418c8dc90c53",
+      "topic": "optimizacion/planta_nivel1/consigna",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27768,
+      "uuid": "4ef0cf00-3f06-4db4-9ebf-ddda450379e3",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27771,
+      "uuid": "758e4f2d-e2b3-40e9-ac15-c01db91a7ad5",
+      "topic": "optimizacion/planta_nivel2/consigna",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27770,
+      "uuid": "ddec8da2-bf99-4f85-b2db-09c94c484f14",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27786,
+      "uuid": "77cb4a2e-dd6c-4cec-8e9a-4920ae9487ec",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27789,
+      "uuid": "a8e33d74-3103-45b6-a49f-fce1da15af14",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27791,
+      "uuid": "082a442d-006d-4647-8fe9-c6680b981fac",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27799,
+      "uuid": "104c4e24-d1b9-404b-885e-e23ee3952f2f",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27811,
+      "uuid": "5392fd84-d488-4517-8049-fbfefdb46a4e",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27813,
+      "uuid": "4a01e6f6-7f95-4d6b-97f9-bd4e22c8e227",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27820,
+      "uuid": "b213d94f-3e62-42be-a758-0551a09b01a1",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27826,
+      "uuid": "538e67a5-e72a-4bb2-b2a6-87603aa4901c",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27839,
+      "uuid": "8ef03dc2-41c4-43cd-96f1-b4356087d1f1",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27840,
+      "uuid": "ede25482-8ccc-491f-a371-f0492280097b",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27846,
+      "uuid": "592d74cd-03c1-47f5-a87b-bcbc031c8b55",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27848,
+      "uuid": "97b8d88f-8881-4de7-a820-51f7412a4b4b",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27850,
+      "uuid": "ebc31033-d204-4a27-b830-6a3eb25b8e73",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27855,
+      "uuid": "241a1e09-c871-400b-896c-a34f70ba8e56",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27857,
+      "uuid": "5503b2e4-9cfd-4fcf-8768-da7bc3f12899",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27859,
+      "uuid": "16a1698f-e170-467d-81a9-3e03c4dbc49f",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27861,
+      "uuid": "1527c281-fcf3-46a9-9036-38d4c1e0f923",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27863,
+      "uuid": "7973af1a-28d8-4e8e-b31e-374531766910",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27870,
+      "uuid": "e16b203a-73ed-40c5-89cb-4679994415a1",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27873,
+      "uuid": "a78b8fee-037f-4ba7-b519-4d5e1a286365",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27874,
+      "uuid": "6da569e8-6376-4a60-bde7-deddea7e8802",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27876,
+      "uuid": "3acd4561-b78d-44f0-9a8a-2b397aadf6dd",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27882,
+      "uuid": "018bef98-6fdd-4fe8-aba7-b971970fe8d8",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27883,
+      "uuid": "c16cb414-74e3-418d-8fe3-4fc438000bce",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27884,
+      "uuid": "76550c0d-cce6-43b1-ba2b-a29673a6dbcd",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27894,
+      "uuid": "fdcdb097-217e-4f3b-96df-25eda9416773",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27895,
+      "uuid": "15ddac59-6a89-4be5-9764-298c595cddaa",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27901,
+      "uuid": "992a2829-75c1-48bc-b358-77f085a44961",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27902,
+      "uuid": "b83fc59b-25cc-4ce7-86fb-eefe13247b02",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27906,
+      "uuid": "e81580aa-0ad1-4325-ace6-20270d1e9bbe",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27908,
+      "uuid": "27b6d1ea-9ef3-406f-9aa7-55ce03664ba0",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27919,
+      "uuid": "70fa2b2c-1531-4f72-8a32-14f7498a2018",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27920,
+      "uuid": "c5787ea1-4536-448e-b782-bec4bb89af07",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27921,
+      "uuid": "464075d6-61d3-47e8-8d0d-b3287e0efe53",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27932,
+      "uuid": "50ce2d34-9a5d-44b7-b14e-40206f81d01c",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27933,
+      "uuid": "5ea91364-b0c0-4d3a-9654-9e05527eeaf7",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27938,
+      "uuid": "50d34eea-e958-4aa3-83e9-d9f1de7e78c4",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27948,
+      "uuid": "0ee4291b-21c6-4be8-b252-6f2a0a4e1167",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27950,
+      "uuid": "ad650696-dffb-4d4b-a628-7de51c7f19cd",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27951,
+      "uuid": "d2fa4254-014d-42ac-933f-db8ca12440e8",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27964,
+      "uuid": "13bbf813-1a5b-4f9e-aeaa-0c06db5865fe",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27968,
+      "uuid": "e57af76b-6d39-402d-b964-409acc7b3321",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27973,
+      "uuid": "593895e7-2a05-4ed0-b598-c836d1a1d438",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 27996,
+      "uuid": "4cb58469-9758-43a1-8b52-71cdfbebe734",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28017,
+      "uuid": "0761a33c-eb97-4599-bf51-5690c0531870",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28026,
+      "uuid": "262dcfa5-3408-477e-be15-8fece9cc5900",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28029,
+      "uuid": "7b7df758-651a-45c8-a9b9-69aa3ee5b3b4",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28039,
+      "uuid": "059c1a8d-763f-4af4-a0f1-64f47c3b7a3e",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28045,
+      "uuid": "b9e3419b-9dd7-4251-a97b-032990b76811",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28046,
+      "uuid": "bf21285a-08e8-4ef3-81db-4b0274fe9b79",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28047,
+      "uuid": "08d34852-63fb-40bf-a3d2-1b088d260c34",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28054,
+      "uuid": "2e22dc8e-d7de-45d5-be6d-5cf92f9efd8b",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28055,
+      "uuid": "06191469-6f9d-4da6-9a21-d4ce93a2f201",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28056,
+      "uuid": "d6d9fc83-42ff-4654-b7e7-adaf1c1d5282",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28058,
+      "uuid": "f2c35043-5918-47e0-8547-4f673b7175cd",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28061,
+      "uuid": "73d5a645-fc22-42ae-9c39-f1c44b0dfb96",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28067,
+      "uuid": "233f7e2b-a5b0-40d1-b35c-b9c0e3c768a3",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28070,
+      "uuid": "d9888c0d-9a83-4fd8-9cd0-8c57cefdcbe2",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28072,
+      "uuid": "69cc8e96-e3ea-4104-9955-bd79c4aaff12",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28082,
+      "uuid": "7f405c9f-39c4-4dff-911e-d84a226fc2dd",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28085,
+      "uuid": "e07b752e-b7cd-444c-ae97-f3c48e90537d",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28090,
+      "uuid": "e8908d6f-b47f-46c4-bc54-074afd21344e",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28101,
+      "uuid": "ffe4543c-b8e9-4942-988e-bd1aca49c40e",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28103,
+      "uuid": "fa8733a4-6ef6-43a7-a145-f57a92ae9663",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28104,
+      "uuid": "3102dc85-257f-4d1e-b681-ee4799cdd430",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28105,
+      "uuid": "ab23c834-591c-4ae6-9134-fa4bdfdc0635",
+      "topic": "optimizacion/planta_nivel2/consigna",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28116,
+      "uuid": "388446f8-9d61-4fb1-b6f6-847efb4352d7",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28117,
+      "uuid": "f398ea8d-0d48-46e7-bf7d-6e4add9fbfcd",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28124,
+      "uuid": "cb8a82bf-ef55-41a4-b9b5-74a23cee7637",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28129,
+      "uuid": "37395bdb-8ee2-451d-b131-dc1591d17559",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28135,
+      "uuid": "3276ec03-faf7-47e9-983b-a8bb80486446",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28136,
+      "uuid": "484b443c-b324-44ed-99b5-dfc7c2468083",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28138,
+      "uuid": "dfb192f8-dbff-4c6e-9a98-743e3486d61b",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28139,
+      "uuid": "7f341aee-d60e-4c72-8a02-5d8769bf50b5",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28145,
+      "uuid": "4e497c4e-2c6d-4b34-be0a-7a62f4a2aac1",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28150,
+      "uuid": "04a62481-efb1-403f-9fd5-6ff4d7694802",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28152,
+      "uuid": "54186437-8dd9-4acc-be6f-725bc0d048a9",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28164,
+      "uuid": "985fe008-0cb8-4577-993b-0a9b66fbfc10",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28172,
+      "uuid": "8b42afa3-5b9c-4817-b014-e44af26089d1",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28181,
+      "uuid": "c953e6b8-759d-4424-89a2-8a4dedf2fd3e",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28185,
+      "uuid": "90317dc4-de76-400c-b2ed-254c89ea2d0e",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28194,
+      "uuid": "c6fe8abd-64b4-48cb-aa7d-f8457b175a11",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28195,
+      "uuid": "fe14c823-c23f-4bbf-a6c5-d0bd4d8e7731",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28196,
+      "uuid": "21691765-4007-43aa-ba26-6fe2fd891b81",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28206,
+      "uuid": "ff8daa39-a995-461d-8b49-efab89a06af1",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28210,
+      "uuid": "83ced9f9-8177-4881-954f-3714229cfd0e",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28214,
+      "uuid": "3debba64-19b9-4f79-a2fa-bcd6d51b3687",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28216,
+      "uuid": "8605c177-fd2d-4a65-94b8-279b244e566d",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28219,
+      "uuid": "3808d743-ff21-4923-84e2-3396285dc48f",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28235,
+      "uuid": "72954a75-b158-42a5-b95e-5da8f3d268ba",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28236,
+      "uuid": "84749055-e7c0-4c3e-b358-02d68c8d5151",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28238,
+      "uuid": "17072146-5e4f-48c5-8f53-93ab781cc46c",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28243,
+      "uuid": "276c3e13-fec2-4251-a2d2-68daef51550d",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28257,
+      "uuid": "6028e3ea-f5ea-49e4-a5cc-f2fcd1f6f9e3",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28258,
+      "uuid": "000ffaf4-c7ff-46f7-b1cb-b684119e973f",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28259,
+      "uuid": "353c84be-5a39-40d9-8620-23ca53eee1af",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28262,
+      "uuid": "31e77989-3efd-45e4-92a5-ff86b539cb5f",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28263,
+      "uuid": "94e13332-cfb2-493e-9a72-6259cdd05d28",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28264,
+      "uuid": "eabc0e77-a009-4bbe-afed-be71a88f8ad3",
+      "topic": "optimizacion/planta_nivel2/consigna",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28271,
+      "uuid": "3f7bfd20-c681-4539-a17f-a4c477c96ca0",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28278,
+      "uuid": "bfd88fde-699b-47cb-99bd-9cd8aab8ef14",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28281,
+      "uuid": "3eba6bd2-2404-4128-b503-188711948225",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28282,
+      "uuid": "13442968-c021-4776-b91e-d383ddca7a8d",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28292,
+      "uuid": "a153a174-42bc-4f3e-be20-7fd9afc1acb5",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28295,
+      "uuid": "7306a3de-74b5-4d1e-8a3e-300e62e2a03d",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28297,
+      "uuid": "a439992e-2cb3-4ca2-a2fe-d245e4c98fc2",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28303,
+      "uuid": "e60f5af8-f088-43f8-b7bc-6d50624a55b3",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28316,
+      "uuid": "f5b77fba-9c36-4000-9b60-48021d88bfc9",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28322,
+      "uuid": "c0f86adb-9c6d-481f-be43-9c2a640b80f8",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28324,
+      "uuid": "4bed4176-4785-465b-b56d-cf9cea065ef1",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28329,
+      "uuid": "b06d6db8-9820-4fff-b11a-d5194afcc30c",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28332,
+      "uuid": "49049905-29b7-405c-972f-161bf6d5d94f",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28333,
+      "uuid": "d6459fdf-17f2-4253-bf02-f48395f4e33e",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28335,
+      "uuid": "32f5d78d-a4ec-48f2-86b1-5379e82591f0",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28336,
+      "uuid": "99e524db-5a8a-4dc0-b8f7-9c481c9943c8",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28345,
+      "uuid": "8afd72a2-9795-43d3-ac1c-c251d541db76",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28354,
+      "uuid": "cfef683e-30bb-453e-bb36-63aed9827792",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28362,
+      "uuid": "2f603813-3c0b-431d-a20b-30449ec01cc6",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28365,
+      "uuid": "b0e858b6-4eed-41f0-b678-e6be179e2276",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28378,
+      "uuid": "75c58d72-8f37-448c-9cef-def3c04775c1",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28379,
+      "uuid": "5f66d959-256a-4fc9-aebf-0421b801f5e2",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28384,
+      "uuid": "271b7368-3a62-43e7-92b6-6cfd138b3b2a",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28404,
+      "uuid": "6cc1a2c7-8247-4835-8316-654a8bfced69",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28405,
+      "uuid": "09d14838-03e7-421a-afc4-22b57747051a",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28406,
+      "uuid": "b8e7b2e3-efc4-48c9-9732-b8e5304c6d36",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28407,
+      "uuid": "0e9949b6-ec75-49fb-924f-39b7ca8e9a3e",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28413,
+      "uuid": "072b51ec-17b2-43ee-99c5-3f29f50777f1",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28414,
+      "uuid": "d56cf154-d4ec-4e82-88e1-6c0fbc2dc7f5",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28425,
+      "uuid": "b7425872-a482-4dec-a062-b4b618a02b09",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28426,
+      "uuid": "7bded545-d109-476f-8521-74d93157d403",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28428,
+      "uuid": "1ca39be6-08ce-46c6-8ec1-5e0dd8f491c6",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28429,
+      "uuid": "05cba53c-8a31-465c-b79f-2fdcefe290df",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28444,
+      "uuid": "53b9502b-2bdc-466f-a96d-856daad33a7c",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28448,
+      "uuid": "2c2cdfdd-0562-4ac6-9970-d385c26979aa",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28451,
+      "uuid": "8c059a35-e2c8-45e1-bfa2-56645ff78233",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28455,
+      "uuid": "e956557f-8ef7-471c-9ed1-21b9ebae19e6",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28461,
+      "uuid": "a33c03fc-1415-4445-8346-7c43b94f08d2",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28466,
+      "uuid": "256e8e51-998e-4eb6-b155-ce033a96b4fd",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28472,
+      "uuid": "2ae9f0cf-37fd-492b-87c6-dd0ac71e07d5",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28474,
+      "uuid": "24118329-1e79-4fad-a8fa-153d2853bd26",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28481,
+      "uuid": "9ebf1edc-a734-4643-b0fa-7f7822d522a0",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28482,
+      "uuid": "f70bc02a-875e-47ae-845e-0cc009810e88",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28488,
+      "uuid": "dbd5ebe5-a094-4bd3-a032-ec9811a8bd4c",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28493,
+      "uuid": "88e4e2ef-7e54-453f-b707-5ef72be39dde",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28495,
+      "uuid": "0a80f262-1031-4364-9031-a4c0a4fcfdb8",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28499,
+      "uuid": "f50cbda7-67e2-4868-af79-35e2d9edca1f",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28500,
+      "uuid": "b3654156-7f74-40d0-9850-d86b6d1fa43d",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28503,
+      "uuid": "1d8a91e1-5ff3-4ff9-8dba-0ea996e09e71",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28505,
+      "uuid": "490c737e-8749-4bf7-a160-b4455b8cfe91",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28506,
+      "uuid": "ee67d41c-2a00-4299-b084-06e0e6f501c0",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28507,
+      "uuid": "6486ff36-819a-4697-8ea2-ff42fe0cd9c0",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28508,
+      "uuid": "27ee35ec-ffde-4e86-9ca0-90cabee95bd2",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28510,
+      "uuid": "6994b7bd-91c4-4d99-b76a-407fd9302df1",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28513,
+      "uuid": "90173e10-ecb8-44ec-855e-2f8962cef61c",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28514,
+      "uuid": "df9dbb50-677a-4245-aadd-3ab3672c9d13",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28516,
+      "uuid": "3262661f-4468-425c-8eba-3bc5078e8ee9",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28520,
+      "uuid": "cf165211-fc99-4fbb-a4a3-251672c58e05",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28522,
+      "uuid": "acc124c8-bd25-4d5e-ab09-600d9394d1d3",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28524,
+      "uuid": "50caa150-9a38-472d-8d8b-7b266e047451",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28525,
+      "uuid": "8fa5cc96-b9d0-426d-a8f0-19181f06ae3a",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28529,
+      "uuid": "2dad0ce2-768c-44bb-97db-0d03cda0a7e3",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28530,
+      "uuid": "c70bba9b-5293-4bc6-88c2-fcf8dfef8381",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28531,
+      "uuid": "8967210b-4bee-4408-bcb1-d1e0e71fbf25",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28532,
+      "uuid": "9fe42f87-0b10-477b-b8d2-992a7ae9c1a9",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28533,
+      "uuid": "65866244-57f5-4862-a73b-6ef85d40f86c",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28534,
+      "uuid": "2ae9ae80-0386-43ca-add4-24509164651c",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28538,
+      "uuid": "d50b34f0-4867-4153-b27d-d238aec59c38",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28539,
+      "uuid": "3c5b3a5b-07c5-4e4d-859a-69d7540dd34e",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28545,
+      "uuid": "af609843-8f40-458a-8c1c-a8c805a26ced",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28546,
+      "uuid": "4ed404c3-ddf3-462b-9d08-42818c89ed9f",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28551,
+      "uuid": "12efdbf1-e087-4f5d-85f1-342ef973198f",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28552,
+      "uuid": "1faa9941-cd3b-4595-8eb3-5cb2d1f36cfd",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28555,
+      "uuid": "272e5527-7580-4503-8c2b-1984121e76c0",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28558,
+      "uuid": "93bf485b-f17c-46f9-a93b-4a71dc8f86ee",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28559,
+      "uuid": "6bbd620e-a364-4d59-9136-c26408a3dcfe",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28560,
+      "uuid": "1ba779f9-1dc2-46ae-94cc-efb286ce39b1",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28562,
+      "uuid": "2c702ece-c7ac-4356-9307-fb647c541f72",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28564,
+      "uuid": "1316b351-67e1-4141-a836-50e20dd14d13",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28565,
+      "uuid": "d32e43ae-ff69-49cf-9714-a34488f2b92b",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28567,
+      "uuid": "dac4f67b-9413-425d-a5c2-066f5955323a",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28569,
+      "uuid": "9dcf942d-387c-4c6f-9674-7216968dbce3",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28574,
+      "uuid": "589ccf75-1080-4680-ab77-c247abe59352",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28577,
+      "uuid": "9f0a27c9-379d-488f-a47e-32c872563ed0",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28579,
+      "uuid": "2da40a48-c9dc-4343-b89a-f631589295bf",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28589,
+      "uuid": "46b5ef56-1e68-42ba-8d14-b249111b7187",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28593,
+      "uuid": "485a68f9-255a-4573-bb5b-2324050e44f0",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28603,
+      "uuid": "17223f8b-a5d5-4061-b53b-151ed02b42a2",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28617,
+      "uuid": "e7336e5c-11dd-4c71-afcf-5c57e191ce0c",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28619,
+      "uuid": "c26a9335-27f1-4c03-b462-909a2a5be6e4",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28645,
+      "uuid": "093a7892-e96f-44fa-8ab3-4e7a1fbae4ef",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28656,
+      "uuid": "7e0f7e6c-c425-47ae-a123-707e376a8ad1",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28661,
+      "uuid": "25574135-288c-4d06-8816-03678c7fe600",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28668,
+      "uuid": "63c59887-005b-4627-af8f-a30721e10b59",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28671,
+      "uuid": "c94a657a-7f04-46a6-acf6-5d80e41c0028",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28676,
+      "uuid": "525589a7-ecfa-43e7-b05a-126c56e2fdd1",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28678,
+      "uuid": "0cff0ef2-8c65-4845-9bbf-623222630cf6",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28682,
+      "uuid": "e02f1975-1aa6-4482-ac31-6c31f9ed5369",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28691,
+      "uuid": "f814e221-71b6-43e7-9658-a9454f7794c6",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28692,
+      "uuid": "dd95a375-4e29-4692-8b90-a9532c27de68",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28694,
+      "uuid": "ed1a16d1-cccd-4115-97c9-d7d0e35e55a1",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28695,
+      "uuid": "ef1afd91-78a7-4b21-bd37-c9a6a9cb41dd",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28696,
+      "uuid": "92fa0cc9-ebae-4c8f-a258-bf72b41cfcf5",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28697,
+      "uuid": "595e7737-0afb-4c91-a6ef-9d2d83bd036c",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28702,
+      "uuid": "af430468-64c6-4db5-baad-e21da587161e",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28703,
+      "uuid": "1553bcef-2a22-49a6-b5ce-4a3f54fcdccf",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28706,
+      "uuid": "dee35727-5bdd-4b42-9b92-d7a392b64765",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28715,
+      "uuid": "6ce87156-889f-4a31-a826-f0f430b52823",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28723,
+      "uuid": "abc4da27-6d73-4a80-8fae-7f783ed0c0c5",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28737,
+      "uuid": "16e6752e-f180-42f5-b2b6-7e48169c4f3d",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28740,
+      "uuid": "2b3758a5-561f-4086-8346-3c7c604d1e2e",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28742,
+      "uuid": "16f98249-af9d-4b99-a552-c30bc14116a3",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28745,
+      "uuid": "effb71ab-8e91-4d3e-9bf9-83660eb4e30e",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28749,
+      "uuid": "4e3dbe49-289e-4493-8b6f-5cf84e35a0ea",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28750,
+      "uuid": "d6feee1c-280b-46ab-9dab-f2e16e85ad92",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28753,
+      "uuid": "54114bb1-32e8-450c-b38c-8905223b3f08",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28754,
+      "uuid": "89c147d3-6b80-4100-bb4c-e8bb9812abaa",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28761,
+      "uuid": "fc5196e5-4205-48ce-b983-c7fe60fe76d1",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28765,
+      "uuid": "2b5c7f9f-91ce-4275-9f85-6ebb278de5a5",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28768,
+      "uuid": "4ad17a73-52e7-46b2-bc1d-255cc84b9d69",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28770,
+      "uuid": "15e93acb-a62d-4e67-a4ad-83f678e2f5e5",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28773,
+      "uuid": "53e4f8d3-5b6f-4438-b07c-35f94ec740f9",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28789,
+      "uuid": "71798fc0-db42-4d15-8544-350aa06bc3f9",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28790,
+      "uuid": "733e7dca-a842-422f-bf6b-ae4ca6a8940e",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28796,
+      "uuid": "077c6e1d-f3e0-4d1f-83c1-c0a494a387b2",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28803,
+      "uuid": "4ede9aeb-5f6d-481d-94c2-dfba2390a2e2",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28805,
+      "uuid": "aafe4434-d233-407a-b866-d5c107d8a536",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28813,
+      "uuid": "40245943-544f-4c95-a5af-bf3bafedfe13",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28817,
+      "uuid": "494544c9-9b9a-4a10-bf51-9f857fad34f5",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28824,
+      "uuid": "de165fe2-8ff9-4403-af5c-78360961428e",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28832,
+      "uuid": "4e09b263-c986-4bfa-b7fc-70b9ad4cb044",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28842,
+      "uuid": "d0e471ec-ffb9-421b-acd4-6efd0483aa5f",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28843,
+      "uuid": "5088b32c-cc6f-4859-9ffe-f6bba720b6b2",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28856,
+      "uuid": "d209aaec-fccd-4130-8d73-c54e76de80bd",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28858,
+      "uuid": "5f15129b-be5c-4ea8-9e3a-02ffbef6653c",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28863,
+      "uuid": "54fb97ec-d76f-4b06-95c2-12f78f722dc9",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28864,
+      "uuid": "f91156df-4390-420f-9164-6bdbf4d7ec24",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28866,
+      "uuid": "c81f9804-c2dc-42cf-b093-452d75e4e3bc",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28869,
+      "uuid": "d52fad39-5342-4cbb-b6e6-899d301784fa",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28873,
+      "uuid": "204021d9-14fc-483f-bbcd-b8da80d6ec1f",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28875,
+      "uuid": "a8d9e118-10a1-4d28-b942-c29c494b1847",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28878,
+      "uuid": "ecb3fb85-a511-417c-8fa3-cef2848cad16",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28882,
+      "uuid": "1e3da4a8-71ce-4678-92e4-68d3bc9d21cd",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28883,
+      "uuid": "b6b4e9a5-050f-4d04-bcb5-10222ce574a7",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28884,
+      "uuid": "09e45800-771c-4df0-a037-b80da6a34a66",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28886,
+      "uuid": "c651dbe8-d757-409d-acb6-c4a10c3a5ee8",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28891,
+      "uuid": "145daf6d-a183-464a-a4ee-8abdfbfa19e3",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28895,
+      "uuid": "237e8ceb-b498-47f8-b8ca-006b5ecb65cd",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28897,
+      "uuid": "6f9e9b24-bf1b-44de-9112-1f5a31826ed8",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28899,
+      "uuid": "e3efa253-5590-43dd-8266-6a2448b2ef67",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28900,
+      "uuid": "ed8f506a-e35a-41e0-9c9e-e61f4da2fbd1",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28902,
+      "uuid": "c0cd6cd8-b2d1-4307-ba6b-33cf2ed18482",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28904,
+      "uuid": "7a8b4e81-9472-4de9-8a00-4dd6873a6c55",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28905,
+      "uuid": "2332ff33-18c3-4a8d-99be-eee71710ed6e",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28907,
+      "uuid": "4803b871-2371-4733-8448-5fa21cc8cf41",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28908,
+      "uuid": "a6929c55-203f-4d14-a801-a17d70876eaa",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28911,
+      "uuid": "9f89d452-1d5d-4d9d-87b0-f281a196bd62",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28912,
+      "uuid": "fa6ae084-853d-44d4-8e8d-c9f9feba290f",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28913,
+      "uuid": "7cb56f90-fb1e-4d2c-a7af-654d14ed606f",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28916,
+      "uuid": "843d285b-eac2-433a-8266-756b68a2b82d",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28918,
+      "uuid": "95f36ca5-becf-4b5d-9946-ddc075be32e1",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28919,
+      "uuid": "d372a801-e3ad-46aa-9156-cb62e47c587c",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28921,
+      "uuid": "f883a839-b684-4f98-b198-705f1ace5334",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28922,
+      "uuid": "f20ea012-654b-45f5-a761-60d82673fa2c",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28924,
+      "uuid": "5391564a-a05b-4598-87ca-7b7d0c1d45ca",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28926,
+      "uuid": "f473e8ff-040b-49ca-befb-0501d05e1a2c",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28929,
+      "uuid": "7c9cbf31-00ba-4e5f-b8b8-6fed1b35ff68",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28931,
+      "uuid": "4e9c4d96-723d-4b3e-9828-d2490ca3509d",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28933,
+      "uuid": "dec9e128-efbb-4da4-a802-9361b0c95723",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28934,
+      "uuid": "181d51bb-5f7a-4b29-969d-d86a5d34888a",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28937,
+      "uuid": "c53e3c6f-9db7-427e-b35b-8d061c26df2f",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28940,
+      "uuid": "4c5ca452-a353-4dda-ab67-9a6f66b90836",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28942,
+      "uuid": "397bad16-24c2-4aed-a456-a6176766a622",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28945,
+      "uuid": "3866f669-d12b-4cc2-b933-4fb6478e9a1b",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28949,
+      "uuid": "9593bd5e-863d-42d9-b4e2-1941395657c6",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28953,
+      "uuid": "4c6ec936-8937-4644-b0cb-c39d6cef7fbd",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28957,
+      "uuid": "e4f47d6d-4275-434a-b6e8-7a93b766ee15",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28961,
+      "uuid": "f392b1a5-c811-40ea-b2c4-a16a9cd99822",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28965,
+      "uuid": "da53683a-9d6c-4bcf-a4e6-eea37a5f787a",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28967,
+      "uuid": "98f942c3-7641-40e0-9e39-676132af49d4",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28970,
+      "uuid": "aba0bcdb-b655-4db9-b6f0-826dc22ac88f",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28972,
+      "uuid": "526188ed-a0c6-4310-9243-f2f4c6a7fdc9",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28974,
+      "uuid": "7c3d600f-2fa1-42ab-af84-86e08858740c",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28981,
+      "uuid": "e70301cb-94e5-49f5-a679-04fbdc89950e",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28983,
+      "uuid": "832b0968-b37c-49a7-853c-f1a14097726c",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28985,
+      "uuid": "dcadfefa-327b-47dc-ad10-d7b235f5edbe",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28989,
+      "uuid": "66539100-f1c6-43ee-b765-a31241b146d0",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28994,
+      "uuid": "4cf6d9b0-40b6-44a2-9cd2-843e691202d3",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 28996,
+      "uuid": "44711b5c-3bc6-4362-950f-a87989698534",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 29002,
+      "uuid": "22a6fccc-55ab-468e-8851-0b7eaddb2809",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 29006,
+      "uuid": "4e805d1e-f0d2-41c8-8bd5-32e813517e8c",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 29008,
+      "uuid": "660f8c57-ad8e-4b2b-9bdf-f33b63cb9d87",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 29010,
+      "uuid": "7e0169bf-e076-4dc1-9d99-61f00dc41306",
+      "topic": "optimizacion/planta_nivel2/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 29016,
+      "uuid": "2b20d62f-6b0d-4933-af01-18a5ff2c21b7",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    },
+    {
+      "csv_line": 29024,
+      "uuid": "9780d11c-1142-4089-ba3d-07a317cc5f3c",
+      "topic": "optimizacion/planta_nivel1/parametros",
+      "reason": "No earlier non-attack-labeled row with exactly the same topic and payload; cannot reconstruct an exact replay without inventing its original."
+    }
+  ],
+  "caps": {
+    "max_legit_background_sample": 0,
+    "max_replay": 0,
+    "note": "When --max-legit is set, original rows needed by selected replay cases are retained in addition to the capped background sample."
+  }
+}

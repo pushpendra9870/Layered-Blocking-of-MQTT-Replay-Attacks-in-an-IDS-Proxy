@@ -1,0 +1,30 @@
+{
+  "matrices": {
+    "Packet-ID / DUP reuse": {
+      "TP": 40,
+      "FP": 0,
+      "TN": 4000,
+      "FN": 40
+    },
+    "HMAC + freshness": {
+      "TP": 80,
+      "FP": 770,
+      "TN": 3230,
+      "FN": 0
+    }
+  },
+  "metrics": {
+    "Packet-ID / DUP reuse": {
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "accuracy": 0.9901960784313726
+    },
+    "HMAC + freshness": {
+      "precision": 0.09411764705882353,
+      "recall": 1.0,
+      "f1": 0.17204301075268816,
+      "accuracy": 0.8112745098039216
+    }
+  }
+}

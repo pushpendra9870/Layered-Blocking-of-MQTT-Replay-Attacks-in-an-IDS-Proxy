@@ -1,0 +1,17 @@
+{
+  "output": "output1_no_ids",
+  "replay_mode": "same_conn",
+  "elapsed_s": 1.01,
+  "all_sends_acknowledged": true,
+  "legit_sent": 27588,
+  "replay_sent": 1153,
+  "delivered_total": 28741,
+  "delivered_payload_bytes": 5725284,
+  "legit_delivered": 27588,
+  "legit_delivery_rate": 1.0,
+  "legit_lost": 0,
+  "replay_delivered_to_subscriber": 1153,
+  "replay_blocking_rate_delivery": 0.0,
+  "broker_received_publishes": 28741,
+  "broker": "mosquitto"
+}

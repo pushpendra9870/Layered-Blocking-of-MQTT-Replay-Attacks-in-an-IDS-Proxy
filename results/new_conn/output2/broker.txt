@@ -1,0 +1,3 @@
+broker=mosquitto
+mosquitto version 2.1.2
+/opt/homebrew/sbin/mosquitto

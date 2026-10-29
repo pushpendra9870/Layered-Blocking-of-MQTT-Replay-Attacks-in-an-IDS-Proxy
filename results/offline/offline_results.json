@@ -1,0 +1,115 @@
+{
+  "Packet-ID / DUP reuse": {
+    "matrix": {
+      "TP": 40,
+      "FP": 0,
+      "TN": 4000,
+      "FN": 40
+    },
+    "metrics": {
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "accuracy": 0.9901960784313726
+    },
+    "by_kind": {
+      "legit_fresh": {
+        "total": 2329,
+        "flagged": 0,
+        "truth": "legit"
+      },
+      "legit_retransmit": {
+        "total": 1671,
+        "flagged": 0,
+        "truth": "legit"
+      },
+      "replay_exact": {
+        "total": 40,
+        "flagged": 40,
+        "truth": "replay"
+      },
+      "replay_dupevasion": {
+        "total": 40,
+        "flagged": 0,
+        "truth": "replay"
+      }
+    }
+  },
+  "HMAC + freshness": {
+    "matrix": {
+      "TP": 80,
+      "FP": 770,
+      "TN": 3230,
+      "FN": 0
+    },
+    "metrics": {
+      "precision": 0.09411764705882353,
+      "recall": 1.0,
+      "f1": 0.17204301075268816,
+      "accuracy": 0.8112745098039216
+    },
+    "by_kind": {
+      "legit_fresh": {
+        "total": 2329,
+        "flagged": 0,
+        "truth": "legit"
+      },
+      "legit_retransmit": {
+        "total": 1671,
+        "flagged": 770,
+        "truth": "legit"
+      },
+      "replay_exact": {
+        "total": 40,
+        "flagged": 40,
+        "truth": "replay"
+      },
+      "replay_dupevasion": {
+        "total": 40,
+        "flagged": 40,
+        "truth": "replay"
+      }
+    }
+  },
+  "Layered IDS (packet-id + HMAC/freshness)": {
+    "matrix": {
+      "TP": 80,
+      "FP": 0,
+      "TN": 4000,
+      "FN": 0
+    },
+    "metrics": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "accuracy": 1.0
+    },
+    "by_kind": {
+      "legit_fresh": {
+        "total": 2329,
+        "flagged": 0,
+        "truth": "legit"
+      },
+      "legit_retransmit": {
+        "total": 1671,
+        "flagged": 0,
+        "truth": "legit"
+      },
+      "replay_exact": {
+        "total": 40,
+        "flagged": 40,
+        "truth": "replay"
+      },
+      "replay_dupevasion": {
+        "total": 40,
+        "flagged": 40,
+        "truth": "replay"
+      }
+    }
+  },
+  "layered_reason_breakdown": {
+    "legit|fresh_sequence|forward": 2217,
+    "legit|retransmit_original_unobserved|forward": 1783,
+    "replay|replay_completed_transaction|drop": 80
+  }
+}

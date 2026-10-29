@@ -1,0 +1,6 @@
+{"name": "output3_layered_ids_minimized", "ids_enabled": true, "minimize": true,
+ "listen_host": "127.0.0.1", "listen_port": 18840,
+ "broker_host": "127.0.0.1", "broker_port": 18830,
+ "on_missing_signature": "drop", "on_invalid_hmac": "drop",
+ "uncertain_action": "forward", "drop_response": "ack", "mqtt5": "reject",
+ "seq_window": 256, "resend_window_s": 10.0}

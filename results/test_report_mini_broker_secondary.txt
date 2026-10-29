@@ -1,0 +1,60 @@
+BROKER USED BY SOCKET TESTS: mini
+test_hmac_alone_is_not_replay_prevention (tests.test_engine.TestInvalid.test_hmac_alone_is_not_replay_prevention)
+A perfectly valid HMAC on a replayed message must still be dropped. ... ok
+test_invalid_hmac_does_not_consume_sequence (tests.test_engine.TestInvalid.test_invalid_hmac_does_not_consume_sequence) ... ok
+test_invalid_hmac_tampered_data (tests.test_engine.TestInvalid.test_invalid_hmac_tampered_data) ... ok
+test_invalid_hmac_wrong_key (tests.test_engine.TestInvalid.test_invalid_hmac_wrong_key) ... ok
+test_missing_signature_variants (tests.test_engine.TestInvalid.test_missing_signature_variants) ... ok
+test_policy_forward_for_missing_signature (tests.test_engine.TestInvalid.test_policy_forward_for_missing_signature) ... ok
+test_cross_identity_replay_is_NOT_detected (tests.test_engine.TestKnownLimitations.test_cross_identity_replay_is_NOT_detected)
+DOCUMENTED LIMITATION: the HMAC covers topic|data|seq|ts, not the sender identity, and replay ... ok
+test_dup_retransmit_of_unobserved_original_late_seq (tests.test_engine.TestLegit.test_dup_retransmit_of_unobserved_original_late_seq) ... ok
+test_pid_reuse_after_completion_with_fresh_seq_is_legit (tests.test_engine.TestLegit.test_pid_reuse_after_completion_with_fresh_seq_is_legit) ... ok
+test_qos1_fresh_sequence (tests.test_engine.TestLegit.test_qos1_fresh_sequence) ... ok
+test_qos1_retransmit_while_in_flight_is_legit (tests.test_engine.TestLegit.test_qos1_retransmit_while_in_flight_is_legit) ... ok
+test_qos2_full_handshake_and_retransmits (tests.test_engine.TestLegit.test_qos2_full_handshake_and_retransmits) ... ok
+test_qos2_not_completed_by_pubrec_alone (tests.test_engine.TestLegit.test_qos2_not_completed_by_pubrec_alone) ... ok
+test_dropped_packet_does_not_poison_state (tests.test_engine.TestReplay.test_dropped_packet_does_not_poison_state) ... ok
+test_dup_evasion_replay (tests.test_engine.TestReplay.test_dup_evasion_replay) ... ok
+test_exact_replay_dup0 (tests.test_engine.TestReplay.test_exact_replay_dup0) ... ok
+test_inflight_nodup_duplicate_is_replay (tests.test_engine.TestReplay.test_inflight_nodup_duplicate_is_replay) ... ok
+test_late_sequence_nodup_is_replay (tests.test_engine.TestReplay.test_late_sequence_nodup_is_replay) ... ok
+test_qos0_replay (tests.test_engine.TestReplay.test_qos0_replay) ... ok
+test_replay_on_new_pid (tests.test_engine.TestReplay.test_replay_on_new_pid) ... ok
+test_same_seq_different_content_rejected_by_hmac_first (tests.test_engine.TestReplay.test_same_seq_different_content_rejected_by_hmac_first) ... ok
+test_stale_sequence_replay_below_window (tests.test_engine.TestReplay.test_stale_sequence_replay_below_window) ... ok
+test_stale_timestamp_when_enabled (tests.test_engine.TestReplay.test_stale_timestamp_when_enabled) ... ok
+test_clean_session_clears_pid_state_but_not_seq_state (tests.test_engine.TestSessions.test_clean_session_clears_pid_state_but_not_seq_state) ... ok
+test_lost_ack_outside_resend_window_is_replay (tests.test_engine.TestSessions.test_lost_ack_outside_resend_window_is_replay) ... ok
+test_lost_ack_retransmit_is_uncertain_and_forwarded_by_default (tests.test_engine.TestSessions.test_lost_ack_retransmit_is_uncertain_and_forwarded_by_default) ... ok
+test_lost_ack_uncertain_policy_drop (tests.test_engine.TestSessions.test_lost_ack_uncertain_policy_drop) ... ok
+test_old_connection_state_isolated_per_client (tests.test_engine.TestSessions.test_old_connection_state_isolated_per_client) ... ok
+test_pid_in_flight_reuse_is_uncertain (tests.test_engine.TestSessions.test_pid_in_flight_reuse_is_uncertain) ... ok
+test_replay_after_reconnect_persistent_session_blocked (tests.test_engine.TestSessions.test_replay_after_reconnect_persistent_session_blocked) ... ok
+test_resume_session_resends_unacked_with_dup (tests.test_engine.TestSessions.test_resume_session_resends_unacked_with_dup) ... ok
+test_counts_and_exclusions (tests.test_external_csv.TestPrepare.test_counts_and_exclusions) ... ok
+test_offline_layered_blocks_replay_and_forwards_negatives (tests.test_external_csv.TestPrepare.test_offline_layered_blocks_replay_and_forwards_negatives) ... ok
+test_replay_copies_latest_matching_original (tests.test_external_csv.TestPrepare.test_replay_copies_latest_matching_original) ... ok
+test_schema_loads_in_live_evaluator (tests.test_external_csv.TestPrepare.test_schema_loads_in_live_evaluator) ... ok
+test_replay_never_reaches_broker (tests.test_external_csv.TestPreparedThroughProxy.test_replay_never_reaches_broker) ... ok
+test_replay_reaches_broker_and_subscribers (tests.test_integration.TestOutput1NoIDS.test_replay_reaches_broker_and_subscribers) ... ok
+test_clean_session_reconnect_replay_blocked_by_seq_layer (tests.test_integration.TestOutput2Layered.test_clean_session_reconnect_replay_blocked_by_seq_layer) ... ok
+test_drop_response_silent_and_disconnect (tests.test_integration.TestOutput2Layered.test_drop_response_silent_and_disconnect) ... ok
+test_fragmented_and_coalesced_tcp_writes (tests.test_integration.TestOutput2Layered.test_fragmented_and_coalesced_tcp_writes) ... ok
+test_invalid_hmac_and_unsigned_never_reach_broker (tests.test_integration.TestOutput2Layered.test_invalid_hmac_and_unsigned_never_reach_broker) ... ok
+test_legit_retransmission_reaches_broker (tests.test_integration.TestOutput2Layered.test_legit_retransmission_reaches_broker) ... ok
+test_mqtt5_connect_rejected (tests.test_integration.TestOutput2Layered.test_mqtt5_connect_rejected) ... ok
+test_persistent_session_reconnect_retransmit_and_replay (tests.test_integration.TestOutput2Layered.test_persistent_session_reconnect_retransmit_and_replay) ... ok
+test_pid_reuse_after_completion_delivered (tests.test_integration.TestOutput2Layered.test_pid_reuse_after_completion_delivered) ... ok
+test_qos2_end_to_end_and_replay_dropped (tests.test_integration.TestOutput2Layered.test_qos2_end_to_end_and_replay_dropped) ... ok
+test_qos2_new_message_after_completion_delivered_once (tests.test_integration.TestOutput2Layered.test_qos2_new_message_after_completion_delivered_once) ... ok
+test_replay_dropped_before_broker_and_client_still_acked (tests.test_integration.TestOutput2Layered.test_replay_dropped_before_broker_and_client_still_acked) ... ok
+test_subscriber_through_proxy_is_bidirectional (tests.test_integration.TestOutput2Layered.test_subscriber_through_proxy_is_bidirectional) ... ok
+test_application_facing_payload_is_minimal (tests.test_integration.TestOutput3Minimized.test_application_facing_payload_is_minimal) ... ok
+test_equivalence_output2_vs_output3_on_scripted_scenario (tests.test_integration.TestOutput3Minimized.test_equivalence_output2_vs_output3_on_scripted_scenario) ... ok
+test_replay_still_dropped_and_feed_has_keepalive (tests.test_integration.TestOutput3Minimized.test_replay_still_dropped_and_feed_has_keepalive) ... ok
+
+----------------------------------------------------------------------
+Ran 52 tests in 5.093s
+
+OK

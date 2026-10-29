@@ -1,0 +1,19 @@
+| Metric | Output 1: No IDS | Output 2: Layered IDS | Output 3: Layered IDS + minimized |
+|---|---|---|---|
+| Broker | mosquitto | mosquitto | mosquitto |
+| Path | client -> broker | client -> IDS -> broker | client -> IDS (minimize) -> broker |
+| Legit PUBLISH sent | 4000 | 4000 | 4000 |
+| Legit delivered to subscriber | 4000 | 4000 | 4000 |
+| Legit delivery rate | 1.0 | 1.0 | 1.0 |
+| Replays sent | 80 | 80 | 80 |
+| Replays delivered (leaked) | 80 | 0 | 0 |
+| Replay blocking rate (delivery) | 0.0 | 1.0 | 1.0 |
+| PUBLISH packets the broker received | 4080 | 4000 | 4000 |
+| TP / FP / TN / FN | n/a (no detector) | 80 / 0 / 4000 / 0 | 80 / 0 / 4000 / 0 |
+| Precision | n/a | 1.0 | 1.0 |
+| Recall | n/a | 1.0 | 1.0 |
+| F1 | n/a | 1.0 | 1.0 |
+| Accuracy | n/a | 1.0 | 1.0 |
+| Delivered payload bytes | 1354558 | 1327980 | 979980 |
+| Auth fields (sig/seq/ts) reach app | yes | yes | no |
+| Run time (s) | 0.67 | 0.74 | 0.78 |

@@ -1,0 +1,4 @@
+[consumer] ready
+{"client_id": "demo-device-1", "topic": "demo/room1", "message": {"temp_c": 21}, "keep_alive": 30, "bytes": 53, "verification_fields_leaked": []}
+{"client_id": "demo-device-1", "topic": "demo/room2", "message": {"temp_c": 22}, "keep_alive": 30, "bytes": 53, "verification_fields_leaked": []}
+{"client_id": "demo-device-1", "topic": "demo/room3", "message": {"temp_c": 23}, "keep_alive": 30, "bytes": 53, "verification_fields_leaked": []}

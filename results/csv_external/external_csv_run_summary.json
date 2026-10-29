@@ -1,0 +1,151 @@
+{
+  "created_utc": "2026-10-27T20:49:45.962706+00:00",
+  "dataset": "/Users/pushpendra/Downloads/file__ 2/mqtt_real_dataset_eval/external_data/csv_replay_test_ready.json",
+  "dataset_scored_records": 28741,
+  "broker": "mosquitto",
+  "replay_mode": "same_conn",
+  "note": "Uses the existing project runners and detector configurations; it does not modify IDS rules.",
+  "runs": [
+    {
+      "output": "output1_no_ids",
+      "runner": "run_output1_no_ids.py",
+      "exit_code": 0,
+      "elapsed_seconds": 2.01,
+      "output_dir": "/Users/pushpendra/Downloads/file__ 2/mqtt_real_dataset_eval/results/csv_external/output1_no_ids",
+      "console_log": "/Users/pushpendra/Downloads/file__ 2/mqtt_real_dataset_eval/results/csv_external/output1_no_ids/runner_console.log",
+      "live_results": "/Users/pushpendra/Downloads/file__ 2/mqtt_real_dataset_eval/results/csv_external/output1_no_ids/live_results.json",
+      "metrics": {
+        "output": "output1_no_ids",
+        "replay_mode": "same_conn",
+        "elapsed_s": 1.0,
+        "all_sends_acknowledged": true,
+        "legit_sent": 27588,
+        "replay_sent": 1153,
+        "delivered_total": 28741,
+        "delivered_payload_bytes": 5725284,
+        "legit_delivered": 27588,
+        "legit_delivery_rate": 1.0,
+        "legit_lost": 0,
+        "replay_delivered_to_subscriber": 1153,
+        "replay_blocking_rate_delivery": 0.0,
+        "delivery_attribution": "per-(topic,message) counts; assumes a leaked replay is not masked by a lost legit packet on the same key (cross-checked vs IDS log)",
+        "broker_received_publishes": 28741,
+        "broker": "mosquitto"
+      }
+    },
+    {
+      "output": "output2_layered_ids",
+      "runner": "run_output2_layered_ids.py",
+      "exit_code": 0,
+      "elapsed_seconds": 2.63,
+      "output_dir": "/Users/pushpendra/Downloads/file__ 2/mqtt_real_dataset_eval/results/csv_external/output2_layered_ids",
+      "console_log": "/Users/pushpendra/Downloads/file__ 2/mqtt_real_dataset_eval/results/csv_external/output2_layered_ids/runner_console.log",
+      "live_results": "/Users/pushpendra/Downloads/file__ 2/mqtt_real_dataset_eval/results/csv_external/output2_layered_ids/live_results.json",
+      "metrics": {
+        "output": "output2_layered_ids",
+        "replay_mode": "same_conn",
+        "elapsed_s": 1.35,
+        "all_sends_acknowledged": true,
+        "legit_sent": 27588,
+        "replay_sent": 1153,
+        "delivered_total": 27588,
+        "delivered_payload_bytes": 5495517,
+        "legit_delivered": 27588,
+        "legit_delivery_rate": 1.0,
+        "legit_lost": 0,
+        "replay_delivered_to_subscriber": 0,
+        "replay_blocking_rate_delivery": 1.0,
+        "delivery_attribution": "per-(topic,message) counts; assumes a leaked replay is not masked by a lost legit packet on the same key (cross-checked vs IDS log)",
+        "broker_received_publishes": 27588,
+        "broker": "mosquitto",
+        "ids_verdict_aligned_with_dataset": true,
+        "ids_matrix": {
+          "TP": 1153,
+          "FP": 0,
+          "TN": 27588,
+          "FN": 0
+        },
+        "ids_metrics": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "accuracy": 1.0
+        },
+        "ids_by_kind": {
+          "legit_fresh": {
+            "total": 27588,
+            "dropped": 0
+          },
+          "replay_csv_exact_dup0": {
+            "total": 1153,
+            "dropped": 1153
+          }
+        },
+        "ids_reason_breakdown": {
+          "legit|fresh_sequence|forward|packet_id+hmac_freshness": 27588,
+          "replay|replay_stale_sequence|drop|hmac_freshness": 1143,
+          "replay|replay_completed_transaction|drop|packet_id+hmac_freshness": 10
+        },
+        "ids_replays_dropped": 1153,
+        "replay_blocking_rate_ids": 1.0
+      }
+    },
+    {
+      "output": "output3_layered_ids_minimized",
+      "runner": "run_output3_layered_ids_minimized.py",
+      "exit_code": 0,
+      "elapsed_seconds": 4.26,
+      "output_dir": "/Users/pushpendra/Downloads/file__ 2/mqtt_real_dataset_eval/results/csv_external/output3_layered_ids_minimized",
+      "console_log": "/Users/pushpendra/Downloads/file__ 2/mqtt_real_dataset_eval/results/csv_external/output3_layered_ids_minimized/runner_console.log",
+      "live_results": "/Users/pushpendra/Downloads/file__ 2/mqtt_real_dataset_eval/results/csv_external/output3_layered_ids_minimized/live_results.json",
+      "metrics": {
+        "output": "output3_layered_ids_minimized",
+        "replay_mode": "same_conn",
+        "elapsed_s": 1.65,
+        "all_sends_acknowledged": true,
+        "legit_sent": 27588,
+        "replay_sent": 1153,
+        "delivered_total": 27588,
+        "delivered_payload_bytes": 2760889,
+        "legit_delivered": 27588,
+        "legit_delivery_rate": 1.0,
+        "legit_lost": 0,
+        "replay_delivered_to_subscriber": 0,
+        "replay_blocking_rate_delivery": 1.0,
+        "delivery_attribution": "per-(topic,message) counts; assumes a leaked replay is not masked by a lost legit packet on the same key (cross-checked vs IDS log)",
+        "broker_received_publishes": 27588,
+        "broker": "mosquitto",
+        "ids_verdict_aligned_with_dataset": true,
+        "ids_matrix": {
+          "TP": 1153,
+          "FP": 0,
+          "TN": 27588,
+          "FN": 0
+        },
+        "ids_metrics": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "accuracy": 1.0
+        },
+        "ids_by_kind": {
+          "legit_fresh": {
+            "total": 27588,
+            "dropped": 0
+          },
+          "replay_csv_exact_dup0": {
+            "total": 1153,
+            "dropped": 1153
+          }
+        },
+        "ids_reason_breakdown": {
+          "legit|fresh_sequence|forward|packet_id+hmac_freshness": 27588,
+          "replay|replay_stale_sequence|drop|hmac_freshness": 1143,
+          "replay|replay_completed_transaction|drop|packet_id+hmac_freshness": 10
+        },
+        "ids_replays_dropped": 1153,
+        "replay_blocking_rate_ids": 1.0
+      }
+    }
+  ]
+}
